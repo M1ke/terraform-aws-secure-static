@@ -1,3 +1,11 @@
+provider "aws" {
+  alias = "main"
+}
+
+provider "aws" {
+  alias = "us-east-1"
+}
+
 module "certs-us-east-1" {
   source = "./modules/acm"
 
@@ -22,7 +30,7 @@ module "website" {
   source = "./modules/static-website"
 
   providers = {
-    aws = aws
+    aws = aws.main
   }
 
   domain_website = var.domain_website

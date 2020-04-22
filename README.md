@@ -13,7 +13,7 @@ An example of usage for a real project [can be seen here](https://github.com/M1k
 
 Your website can be deployed in a region of your choosing, but ACM and Lambda functions for Cloudfront must be deployed in `us-east-1`. Therefore the module expects two providers:
 
-* `aws` An AWS provider in any region (can be us-east-1)
+* `aws.main` An AWS provider in any region (can be us-east-1)
 * `aws.us-east-1` An AWS provider for us-east-1
 
 ## Optional variables
