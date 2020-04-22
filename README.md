@@ -22,3 +22,7 @@ Your website can be deployed in a region of your choosing, but ACM and Lambda fu
 * `bucket_logs_name` Tag Name for the logs bucket (default: "Static website logs bucket")
 * `ttl` Default TTL on cloudfront (default: 300)
 * `cert_name` Name of the ACM certificate (default: "Static website certificate") 
+
+## Future scope
+
+* Allow more flexibility with variable maps for tags
