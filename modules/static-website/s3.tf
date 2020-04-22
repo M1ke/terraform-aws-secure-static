@@ -64,7 +64,7 @@ resource "aws_s3_bucket" "www-redirect" {
     redirect_all_requests_to = "https://${var.domain_website}"
   }
 
-  tags {
+  tags = {
     Name= "${var.bucket_website_name} www redirect"
   }
 }

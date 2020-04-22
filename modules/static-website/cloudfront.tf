@@ -80,7 +80,7 @@ resource "aws_cloudfront_distribution" "website" {
     response_code = 404
   }
 
-  tags {
+  tags = {
   }
 }
 
@@ -139,6 +139,6 @@ resource "aws_cloudfront_distribution" "www-redirect" {
     ssl_support_method = "sni-only"
   }
 
-  tags {
+  tags = {
   }
 }
