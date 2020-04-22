@@ -15,7 +15,7 @@ resource "aws_s3_bucket" "website" {
     }
   }
 
-  tags {
+  tags = {
     Name = var.bucket_website_name
   }
 }
