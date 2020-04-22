@@ -53,7 +53,7 @@ resource "aws_s3_bucket" "logs" {
     }
   }
 
-  tags {
+  tags = {
     Name = var.bucket_logs_name
   }
 }
